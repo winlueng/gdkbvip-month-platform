@@ -24,15 +24,45 @@ class OrganizationComment extends Common
 						->hidden(['update_time'])
 						->toArray();*/
 			$oid = input('get.id');
-			$sql  = "SELECT c.*,u.id,u.nick_name,u.head_url FROM month_organization_service_comment c LEFT JOIN month_organization_service s ON c.service_id=s.id AND s.status<>'-1' LEFT JOIN month_organization o ON o.id=s.organization_id LEFT JOIN month_user u ON u.id=c.user_id WHERE c.status<>'-1' AND o.id={$oid}";
+			$page = input('get.page')?input('get.page'):1;
 
-			if (!$list) win_exception('', __LINE__);
+			if ($page == 1) {
+				$num = 0;
+			}else{
+				$num = ($page-1) * 10;
+			}
 
-			$data_total = self::where('organization_id', input('get.id'))
-									  ->where('status', '<>', '-1')
-									  ->count();
+			$sql  = "SELECT c.id as comment_id,
+						c.attitude_score,
+						c.totality_score,
+						c.show_pic,
+						c.status as comment_status,
+						c.comment_info,
+						c.service_id,
+						u.id as user_id,
+						u.nick_name as user_nick_name,
+						u.head_url as user_head_url,
+						COUNT(c.id) as comment_total,
+						s.service_name,
+						s.logo as service_logo
+					FROM month_organization o 
+					LEFT JOIN month_organization_service s ON o.id=s.organization_id AND s.status<>'-1'
+					LEFT JOIN month_organization_service_comment c ON c.service_id=s.id
+					LEFT JOIN month_user u ON u.id=c.user_id 
+					WHERE c.status<>'-1' AND o.id={$oid}
+					ORDER BY c.create_time desc
+					LIMIT {$num},10";
+
+			$list = Db::query($sql);
+
+			if ($list[0]['comment_id'] == null) win_exception('', __LINE__);
+
+			foreach ($list as $v) {
+				$v['show_pic'] = json_decode($v['show_pic'], true);
+				$res[] = $v;
+			}
 			
-			return return_true($list, '', $data_total);
+			return return_true($res, '', (int)$list[0]['comment_total']);
 		} catch (WinException $e) {
 			return $e->false();
 		}
