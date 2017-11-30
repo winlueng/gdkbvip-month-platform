@@ -24,7 +24,7 @@ class OrganizationComment extends Common
 						->hidden(['update_time'])
 						->toArray();*/
 			$oid = input('get.id');
-			// $sql  = "SELECT c.*,u.id,u.nick_name,u.head_url FROM month_organization_service_comment c LEFT JOIN month_organization_service s ON c.service_id=s.id AND s.status<>'-1' LEFT JOIN month_organization o ON o.id=s.organization_id LEFT JOIN month_user u ON u.id=c.user_idWHERE c.status<>'-1' AND o.id={$oid}";
+			$sql  = "SELECT c.*,u.id,u.nick_name,u.head_url FROM month_organization_service_comment c LEFT JOIN month_organization_service s ON c.service_id=s.id AND s.status<>'-1' LEFT JOIN month_organization o ON o.id=s.organization_id LEFT JOIN month_user u ON u.id=c.user_id WHERE c.status<>'-1' AND o.id={$oid}";
 
 			if (!$list) win_exception('', __LINE__);
 
