@@ -39,6 +39,7 @@ class OrganizationComment extends Common
 						c.status as comment_status,
 						c.comment_info,
 						c.service_id,
+						c.organization_id,
 						u.id as user_id,
 						u.nick_name as user_nick_name,
 						u.head_url as user_head_url,
@@ -59,6 +60,18 @@ class OrganizationComment extends Common
 
 			foreach ($list as $v) {
 				$v['show_pic'] = json_decode($v['show_pic'], true);
+				$v['service_info']['service_name'] = $v['service_name'];
+				$v['service_info']['service_logo'] = $v['service_logo'];
+				$v['service_info']['service_id'] = $v['service_id'];
+				$v['user_info']['user_id'] = $v['user_id'];
+				$v['user_info']['user_nick_name'] = $v['user_nick_name'];
+				$v['user_info']['user_head_url'] = $v['user_head_url'];
+				unset($v['service_name']);
+				unset($v['service_logo']);
+				unset($v['service_id']);
+				unset($v['user_id']);
+				unset($v['user_nick_name']);
+				unset($v['user_head_url']);
 				$res[] = $v;
 			}
 			
