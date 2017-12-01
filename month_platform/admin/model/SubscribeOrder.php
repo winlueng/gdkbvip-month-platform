@@ -125,7 +125,7 @@ class SubscribeOrder extends Common
 
 			if ($status == '1' || $status == '2') {
 				$organization = model('Organization')->get($info->organization_id);
-				$time = date('Y年m月d日H:i', $time);
+				// $time = date('Y年m月d日H:i', $time);
 				$news = [
 					'title' => "您已经成功预约了{$organization->organization_name},我们将会有客服联系您,请留意您的电话",
 					'order_id'	=> $info->id,
