@@ -181,7 +181,7 @@ DROP TABLE IF EXISTS `month_article`;
 CREATE TABLE `month_article`(
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`article_name` varchar(255) not null DEFAULT '' COMMENT '文章名称',
-	`article_logo` varchar(255) not null DEFAULT '' COMMENT '文章logo',
+	`article_logo` text not null DEFAULT '' COMMENT '文章logo',
 	`article_content` varchar(255) not null DEFAULT '' COMMENT '文章内容',
 	`doctor_id` int(10) not null DEFAULT 0 COMMENT '0:平台发布, 其他:医生id',
 	`tag_classify_id` int(10) unsigned not null DEFAULT 0 COMMENT '标签分类id',
@@ -465,3 +465,21 @@ CREATE TABLE `month_group_access` (
 	KEY `admin_id`(`admin_id`),
 	KEY `is_super`(`is_super`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '权限组表';
+
+DROP TABLE IF EXISTS `month_announcement`;
+CREATE TABLE `month_group_access` (
+	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
+	`title` varchar(255) not null DEFAULT 0 COMMENT '公告标题',
+	`content` text not null DEFAULT '' COMMENT '公告内容',
+	`receiver_type` tinyint(1) not null DEFAULT 1 COMMENT '接收者类型只能为(1:用户,2:专家)',
+	`receiver_id` int(11) not null DEFAULT 0 COMMENT '接受者id',
+	`announcement_id` int(11) not null DEFAULT 1 COMMENT '公告id'，
+	`news_type`	tinyint(1) not null DEFAULT 1 COMMENT '消息类型(1-普通公告，2-订单消息'），
+	`status` tinyint(1) not null DEFAULT 0 COMMENT '-1-del,0-default',
+	`user_status` tinyint(1) not null DEFAULT 0 COMMENT '-1-del,0-default,1-is_read',
+	`create_time` bigint(13) unsigned not null DEFAULT 0,
+	`update_time` bigint(13) unsigned not null DEFAULT 0,
+	KEY `admin_id`(`admin_id`),
+	KEY `is_super`(`is_super`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '公告表';
+
