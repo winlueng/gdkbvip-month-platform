@@ -397,6 +397,9 @@ CREATE TABLE `month_news_record`(
 	`send_type` tinyint(1) unsigned not null DEFAULT 0 COMMENT '1:用户, 2:医生',
 	`receive_id` int(10) unsigned not null DEFAULT 0,
 	`receive_type` tinyint(1) unsigned not null DEFAULT 0 COMMENT '1:用户, 2:医生',
+	`news_content` text not null DEFAULT '' COMMENT '发送内容',
+	`news_type` tinyint(1) unsigned not null DEFAULT 0 COMMENT '1-文字, 2-图片',
+	`is_read` tinyint(1) unsigned not null DEFAULT 0,
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	`status` tinyint(1) not null DEFAULT 0 COMMENT '-1:删除,0:未读,1:已读',
@@ -469,24 +472,26 @@ CREATE TABLE `month_group_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '权限组表';
 
 DROP TABLE IF EXISTS `month_announcement`;
-CREATE TABLE `month_group_access` (
+CREATE TABLE `month_announcement` (
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`title` varchar(255) not null DEFAULT 0 COMMENT '公告标题',
 	`content` text not null DEFAULT '' COMMENT '公告内容',
 	`receiver_type` tinyint(1) unsigned not null DEFAULT 1 COMMENT '接收者类型只能为(1:用户,2:专家)',
 	`receiver_id` int(11) unsigned not null DEFAULT 0 COMMENT '接受者id',
-	`announcement_id` int(11) unsigned not null DEFAULT 1 COMMENT '公告id'，
-	`news_type`	tinyint(1) unsigned not null DEFAULT 1 COMMENT '消息类型(1-普通公告，2-订单消息'），
+	`announcement_id` int(11) unsigned not null DEFAULT 1 COMMENT '公告id',
+	`news_type`	tinyint(1) unsigned not null DEFAULT 1 COMMENT '消息类型(1-普通公告，2-订单消息)',
 	`status` tinyint(1) not null DEFAULT 0 COMMENT '-1-del,0-default',
 	`user_status` tinyint(1) not null DEFAULT 0 COMMENT '-1-del,0-default,1-is_read',
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
-	KEY `admin_id`(`admin_id`),
-	KEY `is_super`(`is_super`)
+	KEY `receiver_id`(`receiver_id`),
+	KEY `user_status`(`user_status`),
+	KEY `status`(`status`),
+	KEY `receiver_type`(`receiver_type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '公告表';
 
 DROP TABLE IF EXISTS `month_article_behavior`;
-CREATE TABLE `month_group_access` (
+CREATE TABLE `month_article_behavior` (
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`user_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联month_user.id',
 	`article_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联month_article.id',
@@ -499,12 +504,13 @@ CREATE TABLE `month_group_access` (
 	`status` tinyint(1) not null DEFAULT 0 COMMENT 'relevance month_article.status',
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
-	KEY `admin_id`(`admin_id`),
-	KEY `is_super`(`is_super`)
+	KEY `article_id`(`article_id`),
+	KEY `status`(`status`),
+	KEY `user_id`(`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '文章行为表';
 
 DROP TABLE IF EXISTS `month_doctor_behavior`;
-CREATE TABLE `month_group_access` (
+CREATE TABLE `month_doctor_behavior` (
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`user_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联month_user.id',
 	`doctor_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联month_doctor_info.id',
@@ -517,12 +523,12 @@ CREATE TABLE `month_group_access` (
 	`status` tinyint(1) not null DEFAULT 0 COMMENT 'relevance month_doctor_info.status',
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
-	KEY `admin_id`(`admin_id`),
-	KEY `is_super`(`is_super`)
+	KEY `user_id`(`user_id`),
+	KEY `doctor_id`(`doctor_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '用户对专家行为表';
 
 DROP TABLE IF EXISTS `month_organization_behavior`;
-CREATE TABLE `month_group_access` (
+CREATE TABLE `month_organization_behavior` (
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`user_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联month_user.id',
 	`organization_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联month_organiztion.id',
@@ -534,12 +540,12 @@ CREATE TABLE `month_group_access` (
 	`status` tinyint(1) not null DEFAULT 0 COMMENT 'relevance month_doctor_info.status',
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
-	KEY `admin_id`(`admin_id`),
-	KEY `is_super`(`is_super`)
+	KEY `user_id`(`user_id`),
+	KEY `organization_id`(`organization_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '机构行为表';
 
 DROP TABLE IF EXISTS `month_service_behavior`;
-CREATE TABLE `month_group_access` (
+CREATE TABLE `month_service_behavior` (
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`user_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联month_user.id',
 	`service_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联month_organiztion_service.id',
@@ -551,23 +557,91 @@ CREATE TABLE `month_group_access` (
 	`status` tinyint(1) not null DEFAULT 0 COMMENT 'relevance month_doctor_info.status',
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
-	KEY `admin_id`(`admin_id`),
-	KEY `is_super`(`is_super`)
+	KEY `user_id`(`user_id`),
+	KEY `service_id`(`service_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '机构服务行为表';
 
 DROP TABLE IF EXISTS `month_user_symptomatography`;
-CREATE TABLE `month_group_access` (
+CREATE TABLE `month_user_symptomatography` (
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`user_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联month_user.id',
-	`symptom` text unsigned not null DEFAULT '' COMMENT '症状内容',
-	`symptom_img` text unsigned not null DEFAULT '' COMMENT '症状图片',
-	`share_total` int(11) unsigned not null DEFAULT 0 COMMENT '分享次数',
-	`visit_total` int(11) unsigned not null DEFAULT 0 COMMENT '浏览次数',
-	`visit_second` int(11) unsigned not null DEFAULT 0 COMMENT '共浏览的秒数',
-	`comment_total` int(11) unsigned not null DEFAULT 0 COMMENT '评论次数',
+	`symptom` text not null DEFAULT '' COMMENT '症状内容',
+	`symptom_img` text not null DEFAULT '' COMMENT '症状图片',
 	`status` tinyint(1) not null DEFAULT 0 COMMENT 'relevance month_doctor_info.status',
+	`order_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联 month_doctor_question_order.id',
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
-	KEY `admin_id`(`admin_id`),
-	KEY `is_super`(`is_super`)
+	KEY `user_id`(`user_id`),
+	KEY `status`(`status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '机构服务行为表';
+
+DROP TABLE IF EXISTS `month_classify`;
+CREATE TABLE `month_classify` (
+	`id` int(11) unsigned NOT NULL primary key AUTO_INCREMENT,
+	`classify_name` varchar(255)  not null DEFAULT 0 COMMENT '分类名称',
+	`classify_type` tinyint(1) unsigned not null DEFAULT '' COMMENT '分类类型(1-文章,2-专家)',
+	`pid` int(11) unsigned not null DEFAULT 0 COMMENT '父级id',
+	`status` tinyint(1) not null DEFAULT 0 COMMENT '-1-删除,0-默认,1-禁用',
+	`create_time` bigint(13) unsigned not null DEFAULT 0,
+	`update_time` bigint(13) unsigned not null DEFAULT 0,
+	KEY `classify_type`(`classify_type`),
+	KEY `pid`(`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '分类表';
+
+DROP TABLE IF EXISTS `month_admin_control_log`;
+CREATE TABLE `month_admin_control_log` (
+	`id` int(11) unsigned NOT NULL primary key AUTO_INCREMENT,
+	`admin_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联 month_admin.id',
+	`control_info` text not null DEFAULT '' COMMENT '操作详情',
+	`create_time` bigint(13) unsigned not null DEFAULT 0,
+	`update_time` bigint(13) unsigned not null DEFAULT 0,
+	KEY `admin_id`(`admin_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '管理员操作日志表';
+
+DROP TABLE IF EXISTS `month_article_comment`;
+CREATE TABLE `month_article_comment` (
+	`id` int(11) unsigned NOT NULL primary key AUTO_INCREMENT,
+	`user_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联 month_user.id',
+	`article_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联 month_article.id',
+	`comment_info` text not null DEFAULT '' COMMENT '评论',
+	`praise_list` text not null DEFAULT '' COMMENT '点赞列',
+	`status` tinyint(1) not null DEFAULT 0 COMMENT '-1-删除,0-默认,1-显示',
+	`create_time` bigint(13) unsigned not null DEFAULT 0,
+	`update_time` bigint(13) unsigned not null DEFAULT 0,
+	KEY `user_id`(`user_id`),
+	KEY `status`(`status`),
+	KEY `article_id`(`article_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '文章评论表';
+
+DROP TABLE IF EXISTS `month_doctor_comment`;
+CREATE TABLE `month_doctor_comment` (
+	`id` int(11) unsigned NOT NULL primary key AUTO_INCREMENT,
+	`user_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联 month_user.id',
+	`doctor_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联 month_doctor_info.id',
+	`comment_info` text not null DEFAULT '' COMMENT '评论',
+	`praise_list` text not null DEFAULT '' COMMENT '点赞列',
+	`status` tinyint(1) not null DEFAULT 0 COMMENT '-1-删除,0-默认,1-显示',
+	`create_time` bigint(13) unsigned not null DEFAULT 0,
+	`update_time` bigint(13) unsigned not null DEFAULT 0,
+	KEY `user_id`(`user_id`),
+	KEY `status`(`status`),
+	KEY `doctor_id`(`doctor_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '医生评论表';
+
+DROP TABLE IF EXISTS `month_doctor_question_order`;
+CREATE TABLE `month_doctor_question_order` (
+	`id` int(11) unsigned NOT NULL primary key AUTO_INCREMENT,
+	`user_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联 month_user.id',
+	`doctor_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联 month_doctor_info.id',
+	`order_no` text not null DEFAULT '' COMMENT '订单号',
+	`pay_total` decimal(9,2) not null DEFAULT 0 COMMENT '订单总额',
+	`pay_status` tinyint(1) not null DEFAULT 0 COMMENT '0-默认,1-已支付',
+	`thrid_order_no` text not null DEFAULT '' COMMENT '第三方订单号',
+	`is_time_over` tinyint(1) not null DEFAULT 0 COMMENT '0-默认,1-时间够了,2-专家主动停止',
+	`create_time` bigint(13) unsigned not null DEFAULT 0,
+	`update_time` bigint(13) unsigned not null DEFAULT 0,
+	KEY `user_id`(`user_id`),
+	KEY `status`(`status`),
+	KEY `doctor_id`(`doctor_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '提问订单表';
+
