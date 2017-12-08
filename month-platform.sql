@@ -211,6 +211,7 @@ CREATE TABLE `month_question_article`(
 	`article_name` varchar(255) not null DEFAULT '' COMMENT '问题文章名称',
 	`article_content` varchar(255) not null DEFAULT '' COMMENT '问题文章内容',
 	`tag_classify_id` int(10) unsigned not null DEFAULT 0 COMMENT '标签分类id',
+	`classify_id` int(10) unsigned not null DEFAULT 0,
 	`tag_list` text not null DEFAULT '' COMMENT '标签列',
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
@@ -340,7 +341,9 @@ CREATE TABLE `month_organization_comment`(
 	`organization_id` int(10) unsigned not null DEFAULT 0 COMMENT '机构id',
 	`attitude_score` int(10) unsigned not null DEFAULT 0 COMMENT '态度评分',
 	`totality_score` int(10) unsigned not null DEFAULT 0 COMMENT '总体评分',
+	`service_id` int(10) unsigned not null DEFAULT 0 COMMENT '服务id',
 	`show_pic` int(10) unsigned not null DEFAULT 0 COMMENT '发表图片(最多5张)',
+	`comment_info` text not null DEFAULT '' COMMENT '发表内容',
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	`status` tinyint(1) not null DEFAULT 0 COMMENT '-1:删除,0:默认,1:显示',
@@ -354,6 +357,8 @@ DROP TABLE IF EXISTS `month_organization_service`;
 CREATE TABLE `month_organization_service`(
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`organization_id` int(10) unsigned not null DEFAULT 0 COMMENT '机构id',
+	`service_name` varchar(255) not null DEFAULT '',
+	`detail` text not null DEFAULT '',
 	`logo` varchar(255) not null DEFAULT 0 COMMENT 'logo图片',
 	`service_pic` int(10) unsigned not null DEFAULT 0 COMMENT '内容图片(最多5张)',
 	`price` decimal(10,2) unsigned not null DEFAULT 0 COMMENT '服务原价',
@@ -382,9 +387,11 @@ DROP TABLE IF EXISTS `month_subscribe_order`;
 CREATE TABLE `month_subscribe_order`(
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`organization_id` int(10) unsigned not null DEFAULT 0,
-	`order_no` int(10) unsigned not null DEFAULT 0,
+	`order_no` varchar(255) unsigned not null DEFAULT 0,
 	`user_id` int(10) unsigned not null DEFAULT 0,
 	`come_time` bigint(13) unsigned not null DEFAULT 0,
+	`phone` bigint(13) unsigned not null DEFAULT 0,
+	`come_man` varchar(255) unsigned not null DEFAULT 0,
 	`is_complete` tinyint(1) unsigned not null DEFAULT 0 COMMENT '0:默认, 1:完成',
 	`is_reset_come_time` tinyint(1) unsigned not null DEFAULT 0 COMMENT '0:未设置, 1:已设置过',
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
@@ -440,16 +447,18 @@ DROP TABLE IF EXISTS `month_rule`;
 CREATE TABLE `month_rule` (
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`controller` varchar(255) not null DEFAULT '' COMMENT '控制器权限',
+	`module` varchar(255) not null DEFAULT '' COMMENT '控制器权限',
 	`method` varchar(255) not null DEFAULT '' COMMENT '方法权限',
 	`title` varchar(255) not null DEFAULT '' COMMENT '权限名称',
 	`is_display` tinyint(1) not null DEFAULT 0 COMMENT '0:默认, 1:显示',
+	`parent_id` int(11) not null DEFAULT 0,
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	`status` tinyint(1) not null DEFAULT 1 COMMENT '-1:删除,1:默认',
 	KEY `status`(`status`),
 	KEY `controller`(`controller`),
-	UNIQUE INDEX `method`(`method`),
-	KEY `is_display`(`is_display`),
+	KEY `method`(`method`),
+	KEY `module`(`module`),
 	KEY `create_time`(`create_time`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '权限表';
 
@@ -652,3 +661,20 @@ CREATE TABLE `month_doctor_question_order` (
 	KEY `doctor_id`(`doctor_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '提问订单表';
 
+DROP TABLE IF EXISTS `month_organization_service_comment`;
+CREATE TABLE `month_organization_service_comment` (
+	`id` int(11) unsigned NOT NULL primary key AUTO_INCREMENT,
+	`user_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联 month_user.id',
+	`organization_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联 month_organization.id',
+	`service_id` int(11) unsigned not null DEFAULT 0 COMMENT '关联 month_organization_service.id',
+	`comment_info` text not null DEFAULT '' COMMENT '评论',
+	`show_pic` text not null DEFAULT '',
+	`attitude_score` tinyint(1) unsigned not null DEFAULT 0 COMMENT '态度评分',
+	`totality_score` tinyint(1) unsigned not null DEFAULT 0 COMMENT '总体评分',
+	`status` tinyint(1) not null DEFAULT 0 COMMENT '-1-删除,0-默认,1-显示',
+	`create_time` bigint(13) unsigned not null DEFAULT 0,
+	`update_time` bigint(13) unsigned not null DEFAULT 0,
+	KEY `user_id`(`user_id`),
+	KEY `status`(`status`),
+	KEY `organization_id`(`organization_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '医生评论表';
