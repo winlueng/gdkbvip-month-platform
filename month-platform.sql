@@ -429,6 +429,7 @@ CREATE TABLE `month_admin` (
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`admin_name` varchar(255) not null DEFAULT '' COMMENT '管理员名称(账户名)',
 	`password` varchar(255) not null DEFAULT '' COMMENT '密码',
+	`email` varchar(255) not null DEFAULT '',
 	`phone` bigint(13) unsigned not null DEFAULT 0 COMMENT '手机号',
 	`head_url` varchar(255) not null DEFAULT '' COMMENT '管理员头像',
 	`sex` tinyint(1) unsigned not null DEFAULT 0 COMMENT '1:man,2:women',
@@ -440,6 +441,7 @@ CREATE TABLE `month_admin` (
 	KEY `is_super`(`is_super`),
 	KEY `admin_name`(`admin_name`),
 	KEY `phone`(`phone`),
+	KEY `email`(`email`),
 	KEY `sex`(`sex`),
 	KEY `create_time`(`create_time`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '管理员表';
