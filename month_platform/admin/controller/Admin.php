@@ -3,7 +3,7 @@ namespace app\admin\controller;
 
 use think\Controller;
 
-class Admin extends Controller
+class Admin extends Common
 {
 	public function _initialize()
 	{
@@ -13,25 +13,21 @@ class Admin extends Controller
 
 	public function postAdd()
 	{
-		controller('Common')->check_user_info_exist();
 		return $this->obj->admin_add();
 	}
 
 	public function getList()
 	{
-		controller('Common')->check_user_info_exist();
 		return $this->obj->admin_list();
 	}
 
 	public function postUpdate()
 	{
-		controller('Common')->check_user_info_exist();
 		return $this->obj->admin_update();
 	}
 
 	public function getDel()
 	{
-		controller('Common')->check_user_info_exist();
 		return $this->obj->admin_del();
 	}
 
@@ -42,13 +38,11 @@ class Admin extends Controller
 
 	public function getStatus()
 	{
-		controller('Common')->check_user_info_exist();
 		return $this->obj->change_status();
 	}
 
 	public function postReset_password()
 	{
-		controller('Common')->check_user_info_exist();
 		return $this->obj->admin_reset_password();
 	}
 }
