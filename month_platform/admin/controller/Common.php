@@ -8,11 +8,11 @@ class Common extends Controller
 	protected $obj;
 	protected $user_info;
 	protected $redis;
-	protected $beforeActionList = [// 设置前置方法
+	/*protected $beforeActionList = [// 设置前置方法
 		'check_user_info_exist' => [
 			'except' => 'getall,postupload_file,getart_work,postlogin' 
 		],
-	];
+	];*/
 
 	public function _initialize()
 	{

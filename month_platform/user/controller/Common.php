@@ -11,7 +11,7 @@ class Common extends Controller
 	protected $redis;
 	protected $beforeActionList = [// 设置前置方法
 		'check_user_info_exist' => [
-			'except' => 'postsign_in,postuser_login,getWechat_login,postreset_password_by_phone,postphone_sign_in,postwechat_order_callback'
+			'except' => 'postsign_in,postuser_login,getwechat_login,postreset_password_by_phone,postphone_sign_in,postwechat_order_callback'
 		],
 	];
 
