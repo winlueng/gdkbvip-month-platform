@@ -27,7 +27,7 @@ class Common extends Controller
 	public function check_user_info_exist()
 	{
 		if (!input('get.KB_CODE')) {
-			echo json_encode(return_false(26, '请提交KB_CODE'));exit;
+			echo json_encode(return_false(26, '请提交KB_CODE123123'));exit;
 		}
 
 		if (!$this->user_info) {
