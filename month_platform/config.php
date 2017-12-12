@@ -242,7 +242,7 @@ return [
     ],
 
     define('UPLOAD_PATH','../public/static'),// 保存图片路径
-    define('IMG_API', 'http://img.month.gdkbvip.com'),
+    define('IMG_API', 'http://img.soginkwan.com'),
     define('SMS_APPID', 1400025120),
     define('SMS_APPKEY', '97eda1fc9e89b5a4550bac439b1319c7'),
     define('TX_DX_TEMID', 44927), // 腾讯短信模版id(手机验证)
