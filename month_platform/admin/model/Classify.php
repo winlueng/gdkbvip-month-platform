@@ -26,7 +26,7 @@ class Classify extends Common
 
 	public function scopeStatus($sql)
 	{
-		$sql->where('status', '1');
+		$sql->where('status', '0');
 	}
 
 	public function scopeType($sql)
@@ -70,8 +70,8 @@ class Classify extends Common
 						->hidden(['status', 'create_time'])
 						->toArray();
 
-			if (!$list) win_exception('未查询到任何数据', __LINE__);
-			// halt($list);
+//            halt(self::getLastSql());
+            if (!$list) win_exception('未查询到任何数据', __LINE__);
 			foreach ($list as $v) {
 				$arr = self::status()
 							->withCount('Article,QuestionArticle,Banner')

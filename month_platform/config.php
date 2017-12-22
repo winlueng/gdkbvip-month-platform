@@ -258,7 +258,7 @@ return [
         'AppSecret'    => 'cad4341dae313abebb8541f6e8e3eb8e',// 公众号app密匙
         'MchId'        => '1441569302',// 支付商户号
         'AppKey'       => 'Kuangbangkejiweixinzhifuhaoyong8', // 支付API密钥
-        'WxReturnApi'  => 'http://api.month.gdkbvip.com/v1/user/q_order/wechat_order_callback', // 微信回调地址
+        'WxReturnApi'  => 'http://api.soginkwan.com/v1/user/q_order/wechat_order_callback', // 微信回调地址
     ],
 
     'hostnameConfig' => [

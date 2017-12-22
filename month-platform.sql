@@ -147,6 +147,8 @@ CREATE TABLE `month_doctor_info`(
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	`status` tinyint(1) not null DEFAULT 1 COMMENT '-1:删除,0:申请进驻,1:通过,2:拒绝',
+	`classify_id` int(10) NOT NULL DEFAULT 0 COMMIT '关联month_classify.id',
+	KEY `classify_id`(`classify_id`),
 	KEY `status`(`status`),
 	KEY `organization_id`(`organization_id`),
 	KEY `departments_id`(`departments_id`),
@@ -191,10 +193,12 @@ CREATE TABLE `month_article`(
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	`status` tinyint(1) not null DEFAULT 1 COMMENT '-1:删除,1:默认',
+	`classify_id` int(10) NOT NULL DEFAULT 0 COMMIT '关联month_classify.id',
+	KEY `classify_id`(`classify_id`),
 	KEY `status`(`status`),
 	KEY `doctor_id`(`doctor_id`),
 	KEY `create_time`(`create_time`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '文章表'; 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '文章表';
 
 DROP TABLE IF EXISTS `month_article_statis`;
 CREATE TABLE `month_article_statis`(
@@ -240,6 +244,8 @@ CREATE TABLE `month_banner`(
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	`status` tinyint(1) not null DEFAULT 1 COMMENT '-1:删除,1:默认',
+	`classify_id` int(10) NOT NULL DEFAULT 0 COMMIT '关联month_classify.id',
+	KEY `classify_id`(`classify_id`),
 	KEY `status`(`status`),
 	KEY `create_time`(`create_time`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '广告表';
