@@ -31,9 +31,9 @@ class Classify extends Common
 	public function header_classify_list()
 	{
 		try {
-			$list = self::status()
-						->sort_where()
+			$list = self::sort_where()
 						->child()
+						->where('status', '0')
 						->limit(8)
 						->select();
 
@@ -50,7 +50,7 @@ class Classify extends Common
 	public function classify_list()
 	{
 		try {
-			$list = self::status()
+			$list = self::where('status', '0')
 						->where('pid', 0)
 						->order('create_time desc')
 						->select()
