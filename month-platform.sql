@@ -147,7 +147,7 @@ CREATE TABLE `month_doctor_info`(
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	`status` tinyint(1) not null DEFAULT 1 COMMENT '-1:删除,0:申请进驻,1:通过,2:拒绝',
-	`classify_id` int(10) NOT NULL DEFAULT 0 COMMIT '关联month_classify.id',
+	`classify_id` int(10) NOT NULL DEFAULT 0 COMMENT '关联month_classify.id',
 	KEY `classify_id`(`classify_id`),
 	KEY `status`(`status`),
 	KEY `organization_id`(`organization_id`),
@@ -186,14 +186,14 @@ CREATE TABLE `month_article`(
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`article_name` varchar(255) not null DEFAULT '' COMMENT '文章名称',
 	`article_logo` text not null DEFAULT '' COMMENT '文章logo',
-	`article_content` varchar(255) not null DEFAULT '' COMMENT '文章内容',
+	`article_content` LONGTEXT not null DEFAULT '' COMMENT '文章内容',
 	`doctor_id` int(10) not null DEFAULT 0 COMMENT '0:平台发布, 其他:医生id',
 	`tag_classify_id` int(10) unsigned not null DEFAULT 0 COMMENT '标签分类id',
 	`tag_list` text not null DEFAULT '' COMMENT '标签列',
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	`status` tinyint(1) not null DEFAULT 1 COMMENT '-1:删除,1:默认',
-	`classify_id` int(10) NOT NULL DEFAULT 0 COMMIT '关联month_classify.id',
+	`classify_id` int(10) NOT NULL DEFAULT 0 COMMENT '关联month_classify.id',
 	KEY `classify_id`(`classify_id`),
 	KEY `status`(`status`),
 	KEY `doctor_id`(`doctor_id`),
@@ -204,6 +204,7 @@ DROP TABLE IF EXISTS `month_article_statis`;
 CREATE TABLE `month_article_statis`(
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`relevance_id` int(10) unsigned not null DEFAULT 0,
+  `click_total` int(11) UNSIGNED NOT NULL DEFAULT 0,
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	KEY `create_time`(`create_time`)
@@ -213,7 +214,7 @@ DROP TABLE IF EXISTS `month_question_article`;
 CREATE TABLE `month_question_article`(
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`article_name` varchar(255) not null DEFAULT '' COMMENT '问题文章名称',
-	`article_content` varchar(255) not null DEFAULT '' COMMENT '问题文章内容',
+	`article_content` LONGTEXT not null DEFAULT '' COMMENT '问题文章内容',
 	`tag_classify_id` int(10) unsigned not null DEFAULT 0 COMMENT '标签分类id',
 	`classify_id` int(10) unsigned not null DEFAULT 0,
 	`tag_list` text not null DEFAULT '' COMMENT '标签列',
@@ -228,6 +229,7 @@ DROP TABLE IF EXISTS `month_question_article_statis`;
 CREATE TABLE `month_question_article_statis`(
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`relevance_id` int(10) unsigned not null DEFAULT 0,
+  `click_total` int(11) UNSIGNED NOT NULL DEFAULT 0,
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	KEY `create_time`(`create_time`)
@@ -244,7 +246,7 @@ CREATE TABLE `month_banner`(
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	`status` tinyint(1) not null DEFAULT 1 COMMENT '-1:删除,1:默认',
-	`classify_id` int(10) NOT NULL DEFAULT 0 COMMIT '关联month_classify.id',
+	`classify_id` int(10) NOT NULL DEFAULT 0 COMMENT '关联month_classify.id',
 	KEY `classify_id`(`classify_id`),
 	KEY `status`(`status`),
 	KEY `create_time`(`create_time`)
@@ -254,6 +256,7 @@ DROP TABLE IF EXISTS `month_banner_statis`;
 CREATE TABLE `month_banner_statis`(
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`relevance_id` int(10) unsigned not null DEFAULT 0,
+  `click_total` int(11) UNSIGNED NOT NULL DEFAULT 0,
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	KEY `create_time`(`create_time`)
@@ -276,6 +279,7 @@ DROP TABLE IF EXISTS `month_business_statis`;
 CREATE TABLE `month_business_statis`(
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`relevance_id` int(10) unsigned not null DEFAULT 0,
+  `click_total` int(11) UNSIGNED NOT NULL DEFAULT 0,
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	KEY `create_time`(`create_time`)
@@ -334,6 +338,7 @@ DROP TABLE IF EXISTS `month_organization_statis`;
 CREATE TABLE `month_organization_statis`(
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`relevance_id` int(10) unsigned not null DEFAULT 0,
+  `click_total` int(11) UNSIGNED NOT NULL DEFAULT 0,
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	KEY `create_time`(`create_time`)
@@ -383,6 +388,7 @@ DROP TABLE IF EXISTS `month_organization_service_statis`;
 CREATE TABLE `month_organization_service_statis`(
 	`id` int(10) unsigned NOT NULL primary key AUTO_INCREMENT,
 	`relevance_id` int(10) unsigned not null DEFAULT 0,
+  `click_total` int(11) UNSIGNED NOT NULL DEFAULT 0,
 	`create_time` bigint(13) unsigned not null DEFAULT 0,
 	`update_time` bigint(13) unsigned not null DEFAULT 0,
 	KEY `create_time`(`create_time`)

@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a5e9847-1d9f-4a1f-8967-2ddad07d9d71" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month-platform.sql" afterPath="$PROJECT_DIR$/month-platform.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/admin/model/Classify.php" afterPath="$PROJECT_DIR$/month_platform/admin/model/Classify.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/config.php" afterPath="$PROJECT_DIR$/month_platform/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/database.php" afterPath="$PROJECT_DIR$/month_platform/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/admin/model/Admin.php" afterPath="$PROJECT_DIR$/month_platform/admin/model/Admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/admin/validate/Business.php" afterPath="$PROJECT_DIR$/month_platform/admin/validate/Business.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,31 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/month_platform/database.php">
+      <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="312">
+              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="route.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/month_platform/route.php">
+      <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/admin/model/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Classify.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/month_platform/admin/model/Classify.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="83" column="49" lean-forward="false" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+            <state relative-caret-position="346">
+              <caret line="144" column="36" lean-forward="false" selection-start-line="144" selection-start-column="36" selection-end-line="144" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -63,116 +50,81 @@
       <file leaf-file-name="month-platform.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month-platform.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="247" column="35" lean-forward="false" selection-start-line="247" selection-start-column="35" selection-end-line="247" selection-end-column="35" />
-              <folding>
-                <marker date="1513958822753" expanded="true" signature="184:217" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="219:1180" ph="CREATE TABLE... month_user" />
-                <marker date="1513958822753" expanded="true" signature="1183:1237" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="1239:1802" ph="CREATE TABLE... month_user_ready_pregnancy_info" />
-                <marker date="1513958822753" expanded="true" signature="1805:1853" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="1855:2325" ph="CREATE TABLE... month_user_pregnancy_info" />
-                <marker date="1513958822753" expanded="true" signature="2328:2382" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="2384:3070" ph="CREATE TABLE... month_user_after_pregnancy_info" />
-                <marker date="1513958822753" expanded="true" signature="3073:3118" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="3120:3660" ph="CREATE TABLE... month_user_detail_info" />
-                <marker date="1513958822753" expanded="true" signature="3663:3708" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="3710:4343" ph="CREATE TABLE... month_user_visit_track" />
-                <marker date="1513958822753" expanded="true" signature="4346:4395" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="4397:4856" ph="CREATE TABLE... month_user_question_record" />
-                <marker date="1513958822753" expanded="true" signature="4859:4902" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="4904:5383" ph="CREATE TABLE... month_user_from_help" />
-                <marker date="1513958822753" expanded="true" signature="5386:5922" ph="/*DROP TABLE... " />
-                <marker date="1513958822753" expanded="true" signature="5924:5964" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="5966:7451" ph="CREATE TABLE... month_doctor_info" />
-                <marker date="1513958822753" expanded="true" signature="7454:7495" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="7497:8104" ph="CREATE TABLE... month_tag_classify" />
-                <marker date="1513958822753" expanded="true" signature="8107:8139" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="8141:8704" ph="CREATE TABLE... month_tag" />
-                <marker date="1513958822753" expanded="true" signature="8707:8743" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="8745:9638" ph="CREATE TABLE... month_article" />
-                <marker date="1513958822753" expanded="true" signature="9641:9684" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="9686:10032" ph="CREATE TABLE... month_article_statis" />
-                <marker date="1513958822753" expanded="true" signature="10035:10080" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="10082:10778" ph="CREATE TABLE... month_question_article" />
-                <marker date="1513958822753" expanded="true" signature="10781:10833" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="10835:11192" ph="CREATE TABLE... month_question_article_statis" />
-                <marker date="1513958822753" expanded="true" signature="11195:11230" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="11232:12016" ph="CREATE TABLE... month_banner" />
-                <marker date="1513958822753" expanded="true" signature="12019:12061" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="12063:12408" ph="CREATE TABLE... month_banner_statis" />
-                <marker date="1513958822753" expanded="true" signature="12411:12448" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="12450:13007" ph="CREATE TABLE... month_business" />
-                <marker date="1513958822753" expanded="true" signature="13010:13054" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="13056:13403" ph="CREATE TABLE... month_business_statis" />
-                <marker date="1513958822753" expanded="true" signature="13406:13447" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="13449:14950" ph="CREATE TABLE... month_organization" />
-                <marker date="1513958822753" expanded="true" signature="14953:15001" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="15003:16070" ph="CREATE TABLE... month_organization_detail" />
-                <marker date="1513958822753" expanded="true" signature="16073:16121" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="16123:16474" ph="CREATE TABLE... month_organization_statis" />
-                <marker date="1513958822753" expanded="true" signature="16477:16526" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="16528:17520" ph="CREATE TABLE... month_organization_comment" />
-                <marker date="1513958822753" expanded="true" signature="17523:17572" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="17574:18519" ph="CREATE TABLE... month_organization_service" />
-                <marker date="1513958822753" expanded="true" signature="18522:18578" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="18580:18941" ph="CREATE TABLE... month_organization_service_statis" />
-                <marker date="1513958822753" expanded="true" signature="18944:18988" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="18990:20077" ph="CREATE TABLE... month_subscribe_order" />
-                <marker date="1513958822753" expanded="true" signature="20080:20120" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="20122:21023" ph="CREATE TABLE... month_news_record" />
-                <marker date="1513958822753" expanded="true" signature="21026:21060" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="21062:22003" ph="CREATE TABLE... month_admin" />
-                <marker date="1513958822753" expanded="true" signature="22006:22039" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="22041:22841" ph="CREATE TABLE... month_rule" />
-                <marker date="1513958822753" expanded="true" signature="22844:22883" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="22885:23452" ph="CREATE TABLE... month_rule_group" />
-                <marker date="1513958822753" expanded="true" signature="23455:23496" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="23498:24000" ph="CREATE TABLE... month_group_access" />
-                <marker date="1513958822753" expanded="true" signature="24003:24044" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="24046:25004" ph="CREATE TABLE... month_announcement" />
-                <marker date="1513958822753" expanded="true" signature="25007:25052" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="25054:26073" ph="CREATE TABLE... month_article_behavior" />
-                <marker date="1513958822753" expanded="true" signature="26076:26120" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="26122:27110" ph="CREATE TABLE... month_doctor_behavior" />
-                <marker date="1513958822753" expanded="true" signature="27113:27163" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="27165:28099" ph="CREATE TABLE... month_organization_behavior" />
-                <marker date="1513958822753" expanded="true" signature="28102:28147" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="28149:29073" ph="CREATE TABLE... month_service_behavior" />
-                <marker date="1513958822753" expanded="true" signature="29076:29126" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="29128:29809" ph="CREATE TABLE... month_user_symptomatography" />
-                <marker date="1513958822753" expanded="true" signature="29812:29849" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="29851:30435" ph="CREATE TABLE... month_classify" />
-                <marker date="1513958822753" expanded="true" signature="30438:30484" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="30486:30914" ph="CREATE TABLE... month_admin_control_log" />
-                <marker date="1513958822753" expanded="true" signature="30917:30961" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="30963:31641" ph="CREATE TABLE... month_article_comment" />
-                <marker date="1513958822753" expanded="true" signature="31644:31687" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="31689:32367" ph="CREATE TABLE... month_doctor_comment" />
-                <marker date="1513958822753" expanded="true" signature="32370:32420" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="32422:33293" ph="CREATE TABLE... month_doctor_question_order" />
-                <marker date="1513958822753" expanded="true" signature="33296:33353" ph="DROP TABLE I... " />
-                <marker date="1513958822753" expanded="true" signature="33355:34335" ph="CREATE TABLE... month_organization_service_comment" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="District.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/month_platform/admin/model/District.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="178">
+              <caret line="227" column="51" lean-forward="false" selection-start-line="227" selection-start-column="45" selection-end-line="227" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="District.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/District.php">
+      <file leaf-file-name="Business.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/admin/validate/Business.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+            <state relative-caret-position="153">
+              <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/user/model/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1479">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubscribeOrder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/user/model/SubscribeOrder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="138" column="48" lean-forward="false" selection-start-line="138" selection-start-column="46" selection-end-line="138" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubscribeOrder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Announcement.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/month_platform/admin/model/Announcement.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-255">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1512017271369" expanded="true" signature="1709:1814" ph="select COUNT... announcement_id" />
+                <marker date="1512017271369" expanded="true" signature="1737:1808" ph="select annou... month_announcement" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionArticle.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/QuestionArticle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionArticle.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/admin/model/QuestionArticle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-867">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -183,10 +135,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>class Classify</find>
-      <find>article</find>
       <find>doctor_info</find>
       <find>classify_id</find>
       <find>banner</find>
+      <find>article</find>
+      <find>question_art</find>
+      <find>statis</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,8 +151,10 @@
       <list>
         <option value="$PROJECT_DIR$/month_platform/database.php" />
         <option value="$PROJECT_DIR$/month_platform/admin/model/Classify.php" />
-        <option value="$PROJECT_DIR$/month-platform.sql" />
         <option value="$PROJECT_DIR$/month_platform/admin/controller/District.php" />
+        <option value="$PROJECT_DIR$/month_platform/admin/model/Admin.php" />
+        <option value="$PROJECT_DIR$/month-platform.sql" />
+        <option value="$PROJECT_DIR$/month_platform/admin/validate/Business.php" />
       </list>
     </option>
   </component>
@@ -215,9 +171,9 @@
       <path value="/usr/share/pear" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1366" />
-    <option name="height" value="723" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -251,6 +207,51 @@
               <item name="gdkbvip-month-platform" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="month_platform" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="gdkbvip-month-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gdkbvip-month-platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="month_platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="gdkbvip-month-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gdkbvip-month-platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="month_platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="gdkbvip-month-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gdkbvip-month-platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="month_platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="gdkbvip-month-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gdkbvip-month-platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="month_platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="validate" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="gdkbvip-month-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gdkbvip-month-platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="month_platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="gdkbvip-month-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gdkbvip-month-platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="month_platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="gdkbvip-month-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gdkbvip-month-platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="runtime" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -259,7 +260,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stock/7lk-stock/www/stock.7lk.cn" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -292,15 +293,15 @@
       <option name="presentableId" value="Default" />
       <updated>1513947565195</updated>
       <workItem from="1513947566609" duration="4340000" />
-      <workItem from="1513960300090" duration="1084000" />
+      <workItem from="1513960300090" duration="19470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5424000" />
+    <option name="totallyTimeSpent" value="23810000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="723" extended-state="0" />
+    <frame x="0" y="0" width="1366" height="723" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -308,9 +309,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -337,7 +338,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding />
+          <folding>
+            <marker date="1514822371250" expanded="true" signature="603:1608" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -361,95 +364,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4199">
           <caret line="247" column="35" lean-forward="false" selection-start-line="247" selection-start-column="35" selection-end-line="247" selection-end-column="35" />
-          <folding>
-            <marker date="1513958822753" expanded="true" signature="184:217" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="219:1180" ph="CREATE TABLE... month_user" />
-            <marker date="1513958822753" expanded="true" signature="1183:1237" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="1239:1802" ph="CREATE TABLE... month_user_ready_pregnancy_info" />
-            <marker date="1513958822753" expanded="true" signature="1805:1853" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="1855:2325" ph="CREATE TABLE... month_user_pregnancy_info" />
-            <marker date="1513958822753" expanded="true" signature="2328:2382" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="2384:3070" ph="CREATE TABLE... month_user_after_pregnancy_info" />
-            <marker date="1513958822753" expanded="true" signature="3073:3118" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="3120:3660" ph="CREATE TABLE... month_user_detail_info" />
-            <marker date="1513958822753" expanded="true" signature="3663:3708" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="3710:4343" ph="CREATE TABLE... month_user_visit_track" />
-            <marker date="1513958822753" expanded="true" signature="4346:4395" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="4397:4856" ph="CREATE TABLE... month_user_question_record" />
-            <marker date="1513958822753" expanded="true" signature="4859:4902" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="4904:5383" ph="CREATE TABLE... month_user_from_help" />
-            <marker date="1513958822753" expanded="true" signature="5386:5922" ph="/*DROP TABLE... " />
-            <marker date="1513958822753" expanded="true" signature="5924:5964" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="5966:7451" ph="CREATE TABLE... month_doctor_info" />
-            <marker date="1513958822753" expanded="true" signature="7454:7495" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="7497:8104" ph="CREATE TABLE... month_tag_classify" />
-            <marker date="1513958822753" expanded="true" signature="8107:8139" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="8141:8704" ph="CREATE TABLE... month_tag" />
-            <marker date="1513958822753" expanded="true" signature="8707:8743" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="8745:9638" ph="CREATE TABLE... month_article" />
-            <marker date="1513958822753" expanded="true" signature="9641:9684" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="9686:10032" ph="CREATE TABLE... month_article_statis" />
-            <marker date="1513958822753" expanded="true" signature="10035:10080" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="10082:10778" ph="CREATE TABLE... month_question_article" />
-            <marker date="1513958822753" expanded="true" signature="10781:10833" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="10835:11192" ph="CREATE TABLE... month_question_article_statis" />
-            <marker date="1513958822753" expanded="true" signature="11195:11230" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="11232:12016" ph="CREATE TABLE... month_banner" />
-            <marker date="1513958822753" expanded="true" signature="12019:12061" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="12063:12408" ph="CREATE TABLE... month_banner_statis" />
-            <marker date="1513958822753" expanded="true" signature="12411:12448" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="12450:13007" ph="CREATE TABLE... month_business" />
-            <marker date="1513958822753" expanded="true" signature="13010:13054" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="13056:13403" ph="CREATE TABLE... month_business_statis" />
-            <marker date="1513958822753" expanded="true" signature="13406:13447" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="13449:14950" ph="CREATE TABLE... month_organization" />
-            <marker date="1513958822753" expanded="true" signature="14953:15001" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="15003:16070" ph="CREATE TABLE... month_organization_detail" />
-            <marker date="1513958822753" expanded="true" signature="16073:16121" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="16123:16474" ph="CREATE TABLE... month_organization_statis" />
-            <marker date="1513958822753" expanded="true" signature="16477:16526" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="16528:17520" ph="CREATE TABLE... month_organization_comment" />
-            <marker date="1513958822753" expanded="true" signature="17523:17572" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="17574:18519" ph="CREATE TABLE... month_organization_service" />
-            <marker date="1513958822753" expanded="true" signature="18522:18578" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="18580:18941" ph="CREATE TABLE... month_organization_service_statis" />
-            <marker date="1513958822753" expanded="true" signature="18944:18988" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="18990:20077" ph="CREATE TABLE... month_subscribe_order" />
-            <marker date="1513958822753" expanded="true" signature="20080:20120" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="20122:21023" ph="CREATE TABLE... month_news_record" />
-            <marker date="1513958822753" expanded="true" signature="21026:21060" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="21062:22003" ph="CREATE TABLE... month_admin" />
-            <marker date="1513958822753" expanded="true" signature="22006:22039" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="22041:22841" ph="CREATE TABLE... month_rule" />
-            <marker date="1513958822753" expanded="true" signature="22844:22883" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="22885:23452" ph="CREATE TABLE... month_rule_group" />
-            <marker date="1513958822753" expanded="true" signature="23455:23496" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="23498:24000" ph="CREATE TABLE... month_group_access" />
-            <marker date="1513958822753" expanded="true" signature="24003:24044" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="24046:25004" ph="CREATE TABLE... month_announcement" />
-            <marker date="1513958822753" expanded="true" signature="25007:25052" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="25054:26073" ph="CREATE TABLE... month_article_behavior" />
-            <marker date="1513958822753" expanded="true" signature="26076:26120" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="26122:27110" ph="CREATE TABLE... month_doctor_behavior" />
-            <marker date="1513958822753" expanded="true" signature="27113:27163" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="27165:28099" ph="CREATE TABLE... month_organization_behavior" />
-            <marker date="1513958822753" expanded="true" signature="28102:28147" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="28149:29073" ph="CREATE TABLE... month_service_behavior" />
-            <marker date="1513958822753" expanded="true" signature="29076:29126" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="29128:29809" ph="CREATE TABLE... month_user_symptomatography" />
-            <marker date="1513958822753" expanded="true" signature="29812:29849" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="29851:30435" ph="CREATE TABLE... month_classify" />
-            <marker date="1513958822753" expanded="true" signature="30438:30484" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="30486:30914" ph="CREATE TABLE... month_admin_control_log" />
-            <marker date="1513958822753" expanded="true" signature="30917:30961" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="30963:31641" ph="CREATE TABLE... month_article_comment" />
-            <marker date="1513958822753" expanded="true" signature="31644:31687" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="31689:32367" ph="CREATE TABLE... month_doctor_comment" />
-            <marker date="1513958822753" expanded="true" signature="32370:32420" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="32422:33293" ph="CREATE TABLE... month_doctor_question_order" />
-            <marker date="1513958822753" expanded="true" signature="33296:33353" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="33355:34335" ph="CREATE TABLE... month_organization_service_comment" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -469,22 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/month_platform/admin/model/District.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -493,99 +392,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month-platform.sql">
+    <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="247" column="35" lean-forward="false" selection-start-line="247" selection-start-column="35" selection-end-line="247" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/doctor/controller/DoctorInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/District.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding>
-            <marker date="1513958822753" expanded="true" signature="184:217" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="219:1180" ph="CREATE TABLE... month_user" />
-            <marker date="1513958822753" expanded="true" signature="1183:1237" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="1239:1802" ph="CREATE TABLE... month_user_ready_pregnancy_info" />
-            <marker date="1513958822753" expanded="true" signature="1805:1853" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="1855:2325" ph="CREATE TABLE... month_user_pregnancy_info" />
-            <marker date="1513958822753" expanded="true" signature="2328:2382" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="2384:3070" ph="CREATE TABLE... month_user_after_pregnancy_info" />
-            <marker date="1513958822753" expanded="true" signature="3073:3118" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="3120:3660" ph="CREATE TABLE... month_user_detail_info" />
-            <marker date="1513958822753" expanded="true" signature="3663:3708" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="3710:4343" ph="CREATE TABLE... month_user_visit_track" />
-            <marker date="1513958822753" expanded="true" signature="4346:4395" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="4397:4856" ph="CREATE TABLE... month_user_question_record" />
-            <marker date="1513958822753" expanded="true" signature="4859:4902" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="4904:5383" ph="CREATE TABLE... month_user_from_help" />
-            <marker date="1513958822753" expanded="true" signature="5386:5922" ph="/*DROP TABLE... " />
-            <marker date="1513958822753" expanded="true" signature="5924:5964" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="5966:7451" ph="CREATE TABLE... month_doctor_info" />
-            <marker date="1513958822753" expanded="true" signature="7454:7495" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="7497:8104" ph="CREATE TABLE... month_tag_classify" />
-            <marker date="1513958822753" expanded="true" signature="8107:8139" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="8141:8704" ph="CREATE TABLE... month_tag" />
-            <marker date="1513958822753" expanded="true" signature="8707:8743" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="8745:9638" ph="CREATE TABLE... month_article" />
-            <marker date="1513958822753" expanded="true" signature="9641:9684" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="9686:10032" ph="CREATE TABLE... month_article_statis" />
-            <marker date="1513958822753" expanded="true" signature="10035:10080" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="10082:10778" ph="CREATE TABLE... month_question_article" />
-            <marker date="1513958822753" expanded="true" signature="10781:10833" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="10835:11192" ph="CREATE TABLE... month_question_article_statis" />
-            <marker date="1513958822753" expanded="true" signature="11195:11230" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="11232:12016" ph="CREATE TABLE... month_banner" />
-            <marker date="1513958822753" expanded="true" signature="12019:12061" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="12063:12408" ph="CREATE TABLE... month_banner_statis" />
-            <marker date="1513958822753" expanded="true" signature="12411:12448" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="12450:13007" ph="CREATE TABLE... month_business" />
-            <marker date="1513958822753" expanded="true" signature="13010:13054" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="13056:13403" ph="CREATE TABLE... month_business_statis" />
-            <marker date="1513958822753" expanded="true" signature="13406:13447" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="13449:14950" ph="CREATE TABLE... month_organization" />
-            <marker date="1513958822753" expanded="true" signature="14953:15001" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="15003:16070" ph="CREATE TABLE... month_organization_detail" />
-            <marker date="1513958822753" expanded="true" signature="16073:16121" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="16123:16474" ph="CREATE TABLE... month_organization_statis" />
-            <marker date="1513958822753" expanded="true" signature="16477:16526" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="16528:17520" ph="CREATE TABLE... month_organization_comment" />
-            <marker date="1513958822753" expanded="true" signature="17523:17572" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="17574:18519" ph="CREATE TABLE... month_organization_service" />
-            <marker date="1513958822753" expanded="true" signature="18522:18578" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="18580:18941" ph="CREATE TABLE... month_organization_service_statis" />
-            <marker date="1513958822753" expanded="true" signature="18944:18988" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="18990:20077" ph="CREATE TABLE... month_subscribe_order" />
-            <marker date="1513958822753" expanded="true" signature="20080:20120" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="20122:21023" ph="CREATE TABLE... month_news_record" />
-            <marker date="1513958822753" expanded="true" signature="21026:21060" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="21062:22003" ph="CREATE TABLE... month_admin" />
-            <marker date="1513958822753" expanded="true" signature="22006:22039" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="22041:22841" ph="CREATE TABLE... month_rule" />
-            <marker date="1513958822753" expanded="true" signature="22844:22883" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="22885:23452" ph="CREATE TABLE... month_rule_group" />
-            <marker date="1513958822753" expanded="true" signature="23455:23496" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="23498:24000" ph="CREATE TABLE... month_group_access" />
-            <marker date="1513958822753" expanded="true" signature="24003:24044" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="24046:25004" ph="CREATE TABLE... month_announcement" />
-            <marker date="1513958822753" expanded="true" signature="25007:25052" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="25054:26073" ph="CREATE TABLE... month_article_behavior" />
-            <marker date="1513958822753" expanded="true" signature="26076:26120" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="26122:27110" ph="CREATE TABLE... month_doctor_behavior" />
-            <marker date="1513958822753" expanded="true" signature="27113:27163" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="27165:28099" ph="CREATE TABLE... month_organization_behavior" />
-            <marker date="1513958822753" expanded="true" signature="28102:28147" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="28149:29073" ph="CREATE TABLE... month_service_behavior" />
-            <marker date="1513958822753" expanded="true" signature="29076:29126" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="29128:29809" ph="CREATE TABLE... month_user_symptomatography" />
-            <marker date="1513958822753" expanded="true" signature="29812:29849" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="29851:30435" ph="CREATE TABLE... month_classify" />
-            <marker date="1513958822753" expanded="true" signature="30438:30484" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="30486:30914" ph="CREATE TABLE... month_admin_control_log" />
-            <marker date="1513958822753" expanded="true" signature="30917:30961" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="30963:31641" ph="CREATE TABLE... month_article_comment" />
-            <marker date="1513958822753" expanded="true" signature="31644:31687" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="31689:32367" ph="CREATE TABLE... month_doctor_comment" />
-            <marker date="1513958822753" expanded="true" signature="32370:32420" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="32422:33293" ph="CREATE TABLE... month_doctor_question_order" />
-            <marker date="1513958822753" expanded="true" signature="33296:33353" ph="DROP TABLE I... " />
-            <marker date="1513958822753" expanded="true" signature="33355:34335" ph="CREATE TABLE... month_organization_service_comment" />
+            <marker date="1514822371250" expanded="true" signature="603:1608" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -597,11 +458,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/District.php">
+    <entry file="file://$PROJECT_DIR$/month_platform/doctor/model/DoctorInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        <state relative-caret-position="493">
+          <caret line="101" column="20" lean-forward="false" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+          <folding>
+            <element signature="e#35#51#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="144" column="36" lean-forward="false" selection-start-line="144" selection-start-column="36" selection-end-line="144" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/QuestionArticle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/QuestionArticle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month-platform.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="227" column="51" lean-forward="false" selection-start-line="227" selection-start-column="45" selection-end-line="227" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/validate/Business.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/user/model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1479">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/user/model/SubscribeOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="138" column="48" lean-forward="false" selection-start-line="138" selection-start-column="46" selection-end-line="138" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/Announcement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512017271369" expanded="true" signature="1709:1814" ph="select COUNT... announcement_id" />
+            <marker date="1512017271369" expanded="true" signature="1737:1808" ph="select annou... month_announcement" />
+          </folding>
         </state>
       </provider>
     </entry>
