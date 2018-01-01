@@ -242,7 +242,7 @@ return [
     ],
 
     define('UPLOAD_PATH','../public/static'),// 保存图片路径
-    define('IMG_API', 'http://img.month.gdkbvip.com'),
+    define('IMG_API', 'http://img.soginkwan.com'),
     define('SMS_APPID', 1400025120),
     define('SMS_APPKEY', '97eda1fc9e89b5a4550bac439b1319c7'),
     define('TX_DX_TEMID', 44927), // 腾讯短信模版id(手机验证)
@@ -258,7 +258,7 @@ return [
         'AppSecret'    => 'cad4341dae313abebb8541f6e8e3eb8e',// 公众号app密匙
         'MchId'        => '1441569302',// 支付商户号
         'AppKey'       => 'Kuangbangkejiweixinzhifuhaoyong8', // 支付API密钥
-        'WxReturnApi'  => 'http://api.month.gdkbvip.com/v1/user/q_order/wechat_order_callback', // 微信回调地址
+        'WxReturnApi'  => 'http://api.soginkwan.com/v1/user/q_order/wechat_order_callback', // 微信回调地址
     ],
 
     'hostnameConfig' => [

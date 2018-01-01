@@ -40,7 +40,6 @@ class QuestionArticle extends Common
 				'id' 		   => $this->id,
 				'article_name' => input('post.article_name'),
 				'status'	   => 1,
-				'create_time'  => time(),
 				'article_content' => input('post.article_content'),
 				'create_time' => $info->create_time,
 			];

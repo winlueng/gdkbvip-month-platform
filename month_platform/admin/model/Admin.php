@@ -142,7 +142,7 @@ class Admin extends Common
 
 			if(!$validate->scene('reset_pass')->check(input('post.'))) win_exception($validate->getError(), 141);
 
-			if($info->save(['password' => input('post.password')])) win_exception('重置密码失败', 143);
+			if(!$info->save(['password' => input('post.password')])) win_exception('重置密码失败', __LINE__);
 
 			return return_no_data();
 		} catch (WinException $e) {
