@@ -11,7 +11,7 @@ class User extends Common
 	public function UserDetailInfo()
 	{
 		return $this->hasMany('UserDetailInfo', 'user_id')
-					->field('weight,height,user_id,last_login_time');
+					->field('weight,height,user_id,last_login_time,pregnancy_status');
 	}
 
 	public function setBirthdayAttr($value)
