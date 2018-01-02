@@ -29,7 +29,6 @@ class SubscribeOrder extends Common
 		try {
 			$list = self::time()
 						->order_status()
-						->where('user_status', '<>', '-1')
 						->with('Organization,User')
 						->paginate(10)
 						->hidden(['update_time'])
