@@ -2,8 +2,6 @@
 namespace app\admin\model;
 
 use think\Model;
-use think\Db;// DB类
-use think\Session;// 会话控制
 
 class Common extends Model
 {
@@ -14,9 +12,9 @@ class Common extends Model
 	public function initialize()
 	{
 		parent::initialize();
-		$this->redis = new \Redis;
-		$this->redis->connect('127.0.0.1', 6379);
-		$this->user_info = json_decode($this->redis->get(input('get.KB_CODE')), true);
+        $this->redis = new \Redis;
+        $this->redis->connect('127.0.0.1', 6379);
+        $this->user_info = json_decode($this->redis->get(input('get.KB_CODE')), true);
 	}
 
 	public function scopeStatus($sql)

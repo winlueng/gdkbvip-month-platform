@@ -188,10 +188,10 @@ class Rule extends Common
 
 			if ($info->parent_id == '0' && self::all(['parent_id' => $info->id])->toArray()) {
 
-				if(!self::save(['status' => '-1'],['parent_id' => $info->id])) win_exception('删除失败', 160);
+				if(!self::save(['status' => input('get.status')],['parent_id' => $info->id])) win_exception('删除失败', 160);
 			}
 
-			$info->status = '-1';
+			$info->status = input('get.status');
 
 			if (!$info->save()) win_exception('删除失败', 165);
 

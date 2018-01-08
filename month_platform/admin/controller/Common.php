@@ -2,7 +2,7 @@
 namespace app\admin\controller;
 
 use think\Controller;
-use think\Request;
+
 class Common extends Controller
 {
 	protected $obj;
@@ -17,9 +17,9 @@ class Common extends Controller
 	public function _initialize()
 	{
 		parent::_initialize();
-		$this->obj = model('Common');
-		$this->redis = new \Redis;
-		$this->redis->connect('127.0.0.1', 6379);
+        $this->obj = model('Common');
+        $this->redis = new \Redis;
+        $this->redis->connect('127.0.0.1', 6379);
 		$this->user_info = json_decode($this->redis->get(input('get.KB_CODE')), true);
 	}
 
