@@ -87,6 +87,12 @@ class Organization extends Common
 		}
 	}
 
+	public function visitStatis()
+    {
+        return $this->hasMany('OrganizationBehavior', 'organization_id', 'id')
+                    ->where('visit_total', '>','0');
+    }
+
 	public function organization_list()
 	{
 		try {
@@ -94,6 +100,7 @@ class Organization extends Common
 						->search_name()
 						->search_business()
 						->with('OrganizationDetail,Business')
+                        ->withCount('visitStatis')
 						->order('create_time')
 						->paginate(10)
 						->hidden(['create_time'])
@@ -101,18 +108,12 @@ class Organization extends Common
 						// halt($list);
 			if (!$list) win_exception('', __LINE__);
 
-			foreach ($list as $v) {
-				$sum = model('OrganizationStatis')->where('relevance_id', $v['id'])->sum('click_total');
-				$v['statis'] = $sum?$sum:0;
-				$res[] = $v;
-			}
-
 			$data_total = self::status()
 						->search_business()
 						->search_name()
 						->count();
 
-			return return_true($res, '', $data_total);
+			return return_true($list, '', $data_total);
 		} catch (WinException $e) {
 			return $e->false();
 		}

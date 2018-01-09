@@ -6,7 +6,7 @@ use think\Validate;
 class OrganizationService extends Validate
 {
 	protected $rule = [
-		['service_name', 'require|chsDash|max:20', '请输入店铺介绍|服务名称只能是中文、字母、数字和下划线_及破折号-|名称最长为20个有效字符'],
+		['service_name', 'require|max:40', '请输入店铺介绍|服务名称只能是中文、字母、数字和下划线_及破折号-|名称最长为20个有效字符'],
 		['organization_id', 'require|number|notIn:0', '请输入店铺id|店铺id只能为证书|店铺id不能为0'],
 		['logo', 'require', '请提交服务logo'],
 		['service_pic', 'require|array', '请提交服务服务详情图片|详情图片请输入为数组'],

@@ -29,7 +29,7 @@ class OrganizationComment extends Common
 			if ($page == 1) {
 				$num = 0;
 			}else{
-				$num = ($page-1) * 10;
+				$num = ($page-1) * 10 - 1;
 			}
 
 			$sql  = "SELECT c.id as comment_id,
