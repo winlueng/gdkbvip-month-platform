@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7a5e9847-1d9f-4a1f-8967-2ddad07d9d71" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/user/model/Classify.php" afterPath="$PROJECT_DIR$/month_platform/user/model/Classify.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/user/model/ArticleBehavior.php" afterPath="$PROJECT_DIR$/month_platform/user/model/ArticleBehavior.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,31 +25,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Organization.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/month_platform/admin/model/Organization.php">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="91" column="51" lean-forward="false" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="51" />
+            <state relative-caret-position="119">
+              <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrganizationService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/month_platform/admin/validate/OrganizationService.php">
+      <file leaf-file-name="ArticleBehavior.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/month_platform/user/model/ArticleBehavior.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="255">
+              <caret line="223" column="36" lean-forward="true" selection-start-line="223" selection-start-column="36" selection-end-line="223" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="route.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/month_platform/route.php">
+      <file leaf-file-name="Common.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/user/controller/Common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="55" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleBehavior.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/user/controller/ArticleBehavior.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -85,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Classify.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Classify.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_platform/user/model/Classify.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -111,19 +121,6 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrganizationComment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/month_platform/admin/model/OrganizationComment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-              <folding>
-                <element signature="e#34#50#0#PHP" expanded="true" />
-                <marker date="1515511009890" expanded="true" signature="706:1418" ph="SELECT c.id month_organization" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -167,6 +164,7 @@
         <option value="$PROJECT_DIR$/month_platform/admin/validate/OrganizationService.php" />
         <option value="$PROJECT_DIR$/month_platform/admin/model/OrganizationComment.php" />
         <option value="$PROJECT_DIR$/month_platform/user/model/Classify.php" />
+        <option value="$PROJECT_DIR$/month_platform/user/model/ArticleBehavior.php" />
       </list>
     </option>
   </component>
@@ -290,12 +288,12 @@
       <workItem from="1514961309071" duration="599000" />
       <workItem from="1514966473520" duration="4981000" />
       <workItem from="1515379918283" duration="605000" />
-      <workItem from="1515382591811" duration="10896000" />
+      <workItem from="1515382591811" duration="11553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52485000" />
+    <option name="totallyTimeSpent" value="53142000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="723" extended-state="6" />
@@ -331,28 +329,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/month_platform/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/Classify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="83" column="49" lean-forward="false" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/month-platform.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4199">
@@ -626,14 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/month_platform/admin/model/Organization.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -687,14 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/user/controller/OrganizationComment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/month_platform/doctor/model/DoctorInfo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -703,10 +663,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/user/controller/Classify.php">
+    <entry file="file://$PROJECT_DIR$/month_platform/user/model/Classify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="272">
+          <caret line="62" column="46" lean-forward="false" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/user/controller/ArticleBehavior.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/user/controller/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -719,10 +703,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/user/model/Classify.php">
+    <entry file="file://$PROJECT_DIR$/month_platform/user/controller/Classify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="62" column="46" lean-forward="false" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+        <state relative-caret-position="340">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/user/controller/OrganizationComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/user/model/ArticleBehavior.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="223" column="36" lean-forward="true" selection-start-line="223" selection-start-column="36" selection-end-line="223" selection-end-column="36" />
           <folding />
         </state>
       </provider>
