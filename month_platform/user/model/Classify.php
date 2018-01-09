@@ -60,7 +60,7 @@ class Classify extends Common
 			if (!$list) win_exception('未查询到任何数据', __LINE__);
 			// halt($list);
 			foreach ($list as $v) {
-				$arr = self::status()
+				$arr = self::where('status','0')
 							->where('pid', $v['id'])
 							->order('create_time desc')
 							->select()
