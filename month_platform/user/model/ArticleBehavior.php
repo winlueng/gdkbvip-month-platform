@@ -153,6 +153,7 @@ class ArticleBehavior extends Common
 				self::save(['user_id' => $this->user_info['id'], 'article_id' => $oid]);
 				$behavior_info = self::get(['user_id' => $this->user_info['id'], 'article_id' => $oid]);
 			}
+//			halt($behavior_info->toArray());
 			switch ($behavior) {
 				case 'save':
 					$behavior_info->is_save = 1;
@@ -163,7 +164,7 @@ class ArticleBehavior extends Common
 				case 'visit':
 					$behavior_info->visit_total += 1;
 					$behavior_info->visit_second += input('get.visit_second');
-					if(!model('ArticleStatis')->statis_save()) win_exception('记录浏览量失败', __LINE__);
+//					if(!model('ArticleStatis')->statis_save()) win_exception('记录浏览量失败', __LINE__);
 					break;
 				case 'comment':
 					$behavior_info->comment_total += 1;
