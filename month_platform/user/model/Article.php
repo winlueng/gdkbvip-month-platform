@@ -32,6 +32,12 @@ class Article extends Common
         return $this->hasMany('ArticleBehavior');
     }
 
+    public function visitStatis()
+    {
+        return $this->hasMany('ArticleBehavior', 'article_id', 'id')
+                    ->where('visit_total','>','0');
+    }
+
     public function getArticleContentAttr($value)
     {
         return htmlspecialchars_decode(html_entity_decode($value));
@@ -43,6 +49,7 @@ class Article extends Common
 		try {
 			$list = self::classify()
 						->status()
+                        ->withCount('visitStatis')
 						->paginate(10)
                         ->hidden(['status'])
                         ->toArray();
@@ -54,8 +61,6 @@ class Article extends Common
 							->field('id, tag_name')
 							->where('id', 'in', implode(',', $v['tag_list']))
 							->select();
-				$visit_total = model('ArticleStatis')->where('relevance_id', $v['id'])->sum('click_total');
-				$v['visit_total'] = $visit_total?$visit_total:0;
 				$result[] = $v;
 			}
 
@@ -109,6 +114,7 @@ class Article extends Common
     {
     	try {
     		$list = self::recommend()
+                        ->withCount('visitStatis')
     					->paginate(10);
 
     		if (!$list) {

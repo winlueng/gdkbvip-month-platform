@@ -183,10 +183,10 @@ class ArticleBehavior extends Common
 	public function get_my_save()
 	{
 		try {
-			$list = self::status()
-						->user_id()
+			$list = self::user_id()
 						->with('Article,ArticleStatis')
 						->where('is_save', '1')
+                        ->where('status', '0')
 						->paginate(10)
 						->hidden(['status'])
 						->toArray();
