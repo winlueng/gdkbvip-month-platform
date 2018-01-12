@@ -17,7 +17,7 @@ class SubscribeOrder extends Common
 
 	public function scopeOrder_status($sql)
 	{
-		if (input('get.status') && input('get.status') >= 0) {
+		if (input('get.status') >= 0) {
 			$sql->where('status', input('get.status'));
 		}else{
 			$sql->where('status', '<>', '-1');

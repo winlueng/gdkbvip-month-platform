@@ -60,8 +60,7 @@ class OrganizationBehavior extends Common
 	public function get_my_save()
 	{
 		try {
-			$list = self::status()
-						->user_id()
+			$list = self::user_id()
 						->with('Organization,OrganizationDetail')
 						->where('is_save', '1')
 						->paginate(10)
