@@ -9,7 +9,7 @@ class Organization extends Common
 	public function OrganizationDetail()
 	{
 		return $this->hasMany('OrganizationDetail', 'organization_id')
-					->field('organization_id, description, principal, principal_phone, principal_email, organization_logo, organization_pic, home_link');
+					->field('organization_id, description, principal, principal_phone, principal_email, organization_logo, organization_pic, home_link, synopsis');
 	}
 
 	public function OrganizationComment()

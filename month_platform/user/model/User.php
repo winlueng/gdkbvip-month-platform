@@ -97,6 +97,8 @@ class User extends Common
 			self::startTrans();
 			if (!$this->user_validate->scene('sign_in')->check(input('post.'))) win_exception($this->user_validate->getError(), __LINE__);
 
+			if (self::get(['open_id' => input('post.open_id')])) win_exception('此open_id已注册', __LINE__);
+
 			if (!self::allowField(['open_id', 'nick_name', 'head_url', 'sex', 'create_time', 'update_time'])->save(input('post.'))) win_exception('创建数据失败', __LINE__);
 
 			$info = self::get($this->id)->toArray();
@@ -157,7 +159,9 @@ class User extends Common
 				}
 
 				return return_true($result['data'], $result['kb_code']);
-			}
+			}elseif ($exist && !$this->user_info){
+                win_exception('手机号码已注册', __LINE__);
+            }
 
 			self::startTrans();
 
