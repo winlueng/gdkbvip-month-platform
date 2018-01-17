@@ -21,7 +21,12 @@ class User extends Common
 
 	public function getBirthdayAttr($value)
 	{
-		return date('Y-m-d', $value);
+	    if ($value){
+            return date('Y-m-d', $value);
+        }
+        else{
+	        return null;
+        }
 	}
 
 	public function initialize()
