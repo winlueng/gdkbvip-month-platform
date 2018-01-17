@@ -43,11 +43,11 @@ class SystemNews extends Common
 
 			if (!$list) win_exception('', __LINE__);
 			
-			$is_read_list = $this->redis->get('admin_system_news_read_list_'. $this->user_info['id']);
+			$is_read_list = $this->redis->get('admin_system_news_read_list_11'/*. $this->user_info['id']*/);
+            if ($is_read_list) $is_read_list = json_decode($is_read_list, true);
 
-			if ($is_read_list) $is_read_list = json_decode($is_read_list, true);
-
-			if ($is_read_list){
+            halt($is_read_list);
+            if ($is_read_list){
 				foreach ($list as $v) {
 					if (in_array($v['id'], $is_read_list)) {
 						$v['is_read'] = '1';

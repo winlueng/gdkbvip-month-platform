@@ -40,6 +40,7 @@ class OrganizationComment extends Common
 						c.comment_info,
 						c.service_id,
 						c.organization_id,
+						c.create_time as comment_create_time,
 						u.id as user_id,
 						u.nick_name as user_nick_name,
 						u.head_url as user_head_url,

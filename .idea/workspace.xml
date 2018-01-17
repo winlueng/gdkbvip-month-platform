@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a5e9847-1d9f-4a1f-8967-2ddad07d9d71" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/user/model/DoctorBehavior.php" afterPath="$PROJECT_DIR$/month_platform/user/model/DoctorBehavior.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/user/model/UserAfterPregnancyInfo.php" afterPath="$PROJECT_DIR$/month_platform/user/model/UserAfterPregnancyInfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/user/model/UserPregnancyInfo.php" afterPath="$PROJECT_DIR$/month_platform/user/model/UserPregnancyInfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/user/model/UserReadyPregnancyInfo.php" afterPath="$PROJECT_DIR$/month_platform/user/model/UserReadyPregnancyInfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/admin/model/OrganizationComment.php" afterPath="$PROJECT_DIR$/month_platform/admin/model/OrganizationComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/admin/model/SystemNews.php" afterPath="$PROJECT_DIR$/month_platform/admin/model/SystemNews.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,12 +68,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoctorBehavior.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DoctorBehavior.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_platform/user/model/DoctorBehavior.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="66" column="44" lean-forward="false" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemNews.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SystemNews.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="45" column="77" lean-forward="false" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tag.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/Tag.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemNews.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/SystemNews.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrganizationComment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_platform/admin/model/OrganizationComment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="47" column="39" lean-forward="true" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+              <folding>
+                <marker date="1516204520784" expanded="true" signature="706:1462" ph="SELECT c.id month_organization" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,7 +155,6 @@
         <option value="$PROJECT_DIR$/month_platform/admin/model/Organization.php" />
         <option value="$PROJECT_DIR$/month_platform/admin/model/OrganizationBehavior.php" />
         <option value="$PROJECT_DIR$/month_platform/admin/validate/OrganizationService.php" />
-        <option value="$PROJECT_DIR$/month_platform/admin/model/OrganizationComment.php" />
         <option value="$PROJECT_DIR$/month_platform/user/model/Classify.php" />
         <option value="$PROJECT_DIR$/month_platform/user/model/Article.php" />
         <option value="$PROJECT_DIR$/month_platform/user/model/ArticleBehavior.php" />
@@ -128,6 +167,8 @@
         <option value="$PROJECT_DIR$/month_platform/user/model/UserPregnancyInfo.php" />
         <option value="$PROJECT_DIR$/month_platform/user/model/UserReadyPregnancyInfo.php" />
         <option value="$PROJECT_DIR$/month_platform/user/model/DoctorBehavior.php" />
+        <option value="$PROJECT_DIR$/month_platform/admin/model/OrganizationComment.php" />
+        <option value="$PROJECT_DIR$/month_platform/admin/model/SystemNews.php" />
       </list>
     </option>
   </component>
@@ -183,6 +224,13 @@
               <item name="gdkbvip-month-platform" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="month_platform" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="gdkbvip-month-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gdkbvip-month-platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="month_platform" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="gdkbvip-month-platform" type="b2602c69:ProjectViewProjectNode" />
@@ -306,12 +354,12 @@
       <workItem from="1515379918283" duration="605000" />
       <workItem from="1515382591811" duration="25426000" />
       <workItem from="1515657342383" duration="744000" />
-      <workItem from="1515754763276" duration="13435000" />
+      <workItem from="1515754763276" duration="15171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81194000" />
+    <option name="totallyTimeSpent" value="82930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="723" extended-state="6" />
@@ -347,20 +395,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/month_platform/user/controller/UserReadyPregnancyInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/doctor/model/Common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
@@ -436,13 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/OrganizationComment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -605,14 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/SystemNews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/month_platform/user/model/OrganizationBehavior.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -737,6 +756,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="66" column="44" lean-forward="false" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/Tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/OrganizationComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="47" column="39" lean-forward="true" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+          <folding>
+            <marker date="1516204520784" expanded="true" signature="706:1462" ph="SELECT c.id month_organization" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/SystemNews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SystemNews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="45" column="77" lean-forward="false" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
           <folding />
         </state>
       </provider>
