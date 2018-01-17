@@ -13,10 +13,12 @@ class UserReadyPregnancyInfo extends Common
 
 	public function getLastMenstruationTimeAttr($value)
 	{
-		if (!$value) {
-			return date('Y-m-d', time());
-		}
-		return date('Y-m-d', $value);
+        if ($value){
+            return date('Y-m-d', $value);
+        }
+        else{
+            return null;
+        }
 	}
 
 	public function scopeUid($sql)

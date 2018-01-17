@@ -13,7 +13,12 @@ class UserPregnancyInfo extends Common
 
 	public function getPregnancyDateAttr($value)
 	{
-		return date('Y-m-d', $value);
+        if ($value){
+            return date('Y-m-d', $value);
+        }
+        else{
+            return null;
+        }
 	}
 
 	public function setDueDateAttr($value)
@@ -23,7 +28,12 @@ class UserPregnancyInfo extends Common
 
 	public function getDueDateAttr($value)
 	{
-		return date('Y-m-d', $value);
+        if ($value){
+            return date('Y-m-d', $value);
+        }
+        else{
+            return null;
+        }
 	}
 
 	public function pregnancy_update()

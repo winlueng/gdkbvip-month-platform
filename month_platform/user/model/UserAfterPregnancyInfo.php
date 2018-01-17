@@ -13,7 +13,12 @@ class UserAfterPregnancyInfo extends Common
 
 	public function getBabyBirthdayAttr($value)
 	{
-		return date('Y-m-d H:i:s', $value);
+	    if ($value){
+            return date('Y-m-d H:i:s', $value);
+        }
+        else{
+	        return null;
+        }
 	}
 
 	public function pregnancy_update()
