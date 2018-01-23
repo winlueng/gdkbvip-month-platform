@@ -57,6 +57,7 @@ class Announcement extends Common
 	{
 		try {
 			$list = self::where('status', '<>', '-1')
+                        ->where('order_id', '<>', '0')
 						->order('create_time desc')
 						->group('announcement_id')
 						->paginate(10)
