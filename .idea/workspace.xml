@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a5e9847-1d9f-4a1f-8967-2ddad07d9d71" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/admin/model/Announcement.php" afterPath="$PROJECT_DIR$/month_platform/admin/model/Announcement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php" afterPath="$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php" />
-    </list>
+    <list default="true" id="7a5e9847-1d9f-4a1f-8967-2ddad07d9d71" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,17 +65,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubscribeOrder.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SubscribeOrder.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="128" column="12" lean-forward="true" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+            <state relative-caret-position="343">
+              <caret line="134" column="37" lean-forward="true" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubscribeOrder.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SubscribeOrder.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_platform/user/model/SubscribeOrder.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-578">
@@ -183,8 +179,8 @@
         <option value="$PROJECT_DIR$/month_platform/admin/model/SystemNews.php" />
         <option value="$PROJECT_DIR$/month_platform/admin/controller/Common.php" />
         <option value="$PROJECT_DIR$/month_platform/admin/model/Announcement.php" />
-        <option value="$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php" />
         <option value="$PROJECT_DIR$/month_platform/user/model/SubscribeOrder.php" />
+        <option value="$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php" />
       </list>
     </option>
   </component>
@@ -372,12 +368,12 @@
       <workItem from="1515657342383" duration="744000" />
       <workItem from="1515754763276" duration="16507000" />
       <workItem from="1516589114805" duration="599000" />
-      <workItem from="1516591297608" duration="4375000" />
+      <workItem from="1516591297608" duration="4692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89240000" />
+    <option name="totallyTimeSpent" value="89557000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="723" extended-state="6" />
@@ -391,9 +387,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20863836" sideWeight="0.5064516" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39865997" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -409,7 +405,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -776,18 +774,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="128" column="12" lean-forward="true" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/month_platform/user/model/SubscribeOrder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-578">
           <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="134" column="37" lean-forward="true" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
           <folding />
         </state>
       </provider>
