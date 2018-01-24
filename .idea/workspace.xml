@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a5e9847-1d9f-4a1f-8967-2ddad07d9d71" name="Default" comment="" />
+    <list default="true" id="7a5e9847-1d9f-4a1f-8967-2ddad07d9d71" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,12 +47,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SystemNews.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SystemNews.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SystemNews.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-119">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="e#34#50#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,17 +63,17 @@
         <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/Common.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+              <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubscribeOrder.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SubscribeOrder.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
-              <caret line="134" column="37" lean-forward="true" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
+              <caret line="134" column="37" lean-forward="false" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -79,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/month_platform/user/model/SubscribeOrder.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-578">
-              <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+              <caret line="80" column="34" lean-forward="false" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -88,11 +92,11 @@
       <file leaf-file-name="Announcement.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_platform/admin/model/Announcement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="59" column="52" lean-forward="false" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+            <state relative-caret-position="17">
+              <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="32" />
               <folding>
-                <marker date="1516721707782" expanded="true" signature="1764:1869" ph="select COUNT... announcement_id" />
-                <marker date="1516721707782" expanded="true" signature="1792:1863" ph="select annou... month_announcement" />
+                <marker date="1516723762950" expanded="true" signature="1758:1863" ph="select COUNT... announcement_id" />
+                <marker date="1516723762950" expanded="true" signature="1786:1857" ph="select annou... month_announcement" />
               </folding>
             </state>
           </provider>
@@ -124,7 +128,7 @@
             <state relative-caret-position="765">
               <caret line="47" column="39" lean-forward="false" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
               <folding>
-                <marker date="1516206643594" expanded="true" signature="706:1462" ph="SELECT c.id month_organization" />
+                <marker date="1516723762986" expanded="true" signature="706:1462" ph="SELECT c.id month_organization" />
               </folding>
             </state>
           </provider>
@@ -178,9 +182,9 @@
         <option value="$PROJECT_DIR$/month_platform/admin/model/OrganizationComment.php" />
         <option value="$PROJECT_DIR$/month_platform/admin/model/SystemNews.php" />
         <option value="$PROJECT_DIR$/month_platform/admin/controller/Common.php" />
-        <option value="$PROJECT_DIR$/month_platform/admin/model/Announcement.php" />
         <option value="$PROJECT_DIR$/month_platform/user/model/SubscribeOrder.php" />
         <option value="$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php" />
+        <option value="$PROJECT_DIR$/month_platform/admin/model/Announcement.php" />
       </list>
     </option>
   </component>
@@ -368,12 +372,12 @@
       <workItem from="1515657342383" duration="744000" />
       <workItem from="1515754763276" duration="16507000" />
       <workItem from="1516589114805" duration="599000" />
-      <workItem from="1516591297608" duration="4692000" />
+      <workItem from="1516591297608" duration="7282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89557000" />
+    <option name="totallyTimeSpent" value="92147000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="723" extended-state="6" />
@@ -726,7 +730,7 @@
         <state relative-caret-position="765">
           <caret line="47" column="39" lean-forward="false" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
           <folding>
-            <marker date="1516206643594" expanded="true" signature="706:1462" ph="SELECT c.id month_organization" />
+            <marker date="1516723762986" expanded="true" signature="706:1462" ph="SELECT c.id month_organization" />
           </folding>
         </state>
       </provider>
@@ -735,14 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SystemNews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -758,26 +754,15 @@
     <entry file="file://$PROJECT_DIR$/month_platform/admin/controller/Common.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/Announcement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="59" column="52" lean-forward="false" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
-          <folding>
-            <marker date="1516721707782" expanded="true" signature="1764:1869" ph="select COUNT... announcement_id" />
-            <marker date="1516721707782" expanded="true" signature="1792:1863" ph="select annou... month_announcement" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/month_platform/user/model/SubscribeOrder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-578">
-          <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+          <caret line="80" column="34" lean-forward="false" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -785,8 +770,29 @@
     <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SubscribeOrder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="134" column="37" lean-forward="true" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
+          <caret line="134" column="37" lean-forward="false" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/Announcement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="32" />
+          <folding>
+            <marker date="1516723762950" expanded="true" signature="1758:1863" ph="select COUNT... announcement_id" />
+            <marker date="1516723762950" expanded="true" signature="1786:1857" ph="select annou... month_announcement" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_platform/admin/model/SystemNews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#34#50#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
