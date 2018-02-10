@@ -21,6 +21,7 @@ class DoctorQuestionOrder extends Common
 	public function create_order()
 	{
 		try {
+            trace('--用户生成提问订单开始--','info');
 			$info = self::where('user_id', $this->user_info['id'])
 						->where('doctor_id', input('get.doctor_id'))
 						->order('update_time desc')
@@ -51,11 +52,15 @@ class DoctorQuestionOrder extends Common
 													 ->order('create_time desc')
 													 ->find();
 
-			if (!$sym_info) win_exception('未提交用户症状信息, 不可生成提问订单', __LINE__);
+			if (!$sym_info) {
+                trace('未提交用户症状信息, 不可生成提问订单','error');
+			    win_exception('未提交用户症状信息, 不可生成提问订单', __LINE__);
+            }
 
 			$return_data = self::create_advance($order_no);
 
 			if (!$return_data) { // 生成预订单
+                trace('生成订单失败','error');
 				win_exception('生成订单失败', __LINE__);
 			}else{
 
@@ -78,23 +83,26 @@ class DoctorQuestionOrder extends Common
 				if (!$config) win_exception('配置数组丢失', __LINE__);
 				// halt($this->user_info['open_id']);
 				$wxOrder = $this->wechatObj->wxPayUnifiedOrder($this->user_info['open_id'], $config);
-				// 判断预订单是否生成成功 
+				// 判断预订单是否生成成功
+                trace('--提问订单微信支付接口返回结果--: '. json_encode($wxOrder),'info');
 				if ($wxOrder['return_code'] != 'SUCCESS') {
-					halt($wxOrder);
 				    win_exception('生成预订单失败,返回码: '. $wxOrder['return_code'], __LINE__);
 				}
 
 				// 生成微信支付JSAPI参数
 				if (! array_key_exists('prepay_id', $wxOrder)) {
+                    trace('--提问订单微信支付调起失败--: '. json_encode($wxOrder),'error');
 				     win_exception('生成预订单失败,返回码: '. $wxOrder['err_code_des'], __LINE__);
 				}
 				$jsApiParams = $this->wechatObj->getWxPayJsApiParameters($wxOrder['prepay_id']);
 
 				self::commit();
-				return return_true(json_decode($jsApiParams));
+                trace('--提问订单微信支付处理后返回前端结果--: '. json_encode($jsApiParams),'info');
+                return return_true(json_decode($jsApiParams));
 			}
-			
+
 			self::commit();
+            trace('--用户生成提问订单--: '. json_encode($return_data),'info');
 			return return_true($return_data);
 		} catch (WinException $e) { 
 			self::rollback();
